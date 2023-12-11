@@ -6,6 +6,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background: #151826;
 }
 
 body {
@@ -34,7 +35,14 @@ a:hover {
   border-bottom: 2px solid currentColor;
 }
 
-nav {
+#intro {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  text-align: left;
+}
+
+#intro > nav {
   position:fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,11 +53,17 @@ nav {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: #f3f3f3;
+  background: #151826;
   padding: 2rem;
   padding-right: 4rem;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+#intro > introdiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .nav__examples {
@@ -68,15 +82,10 @@ nav {
   margin-right: 0.5rem;
 }
 
-#intro {
-  max-width: 40rem;
-  margin: 1rem auto;
-  text-align: center;
-}
-
 .intro__hed {
   font-size: 2em;
   margin: 2rem auto 0.5rem auto;
+  color: #8a8a8a;
 }
 
 .intro__dek {
@@ -88,7 +97,18 @@ nav {
 }
 
 #outro {
+  color: #8a8a8a;
+  margin: 0rem 7rem 0rem 7rem;
+  text-align: center;
   height: 640px;
+  font-size: 2.3rem;
+}
+
+#ending {
+  display: flex;
+  justify-content: center;
+  margin: 0rem 7rem 0rem 7rem;
+  align-items: center;
 }
 
 @media (min-width: 840px) {
